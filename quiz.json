@@ -1,0 +1,58 @@
+[
+    {
+        "id": 1,
+        "question": "3 + 3 X 3 + ( 3 - 3 ) =",
+        "probableAnswers": ["24", "13", "12", "23"],
+        "trueAnswer": "12"
+
+    },
+    {
+        "id": 2,
+        "question": "(10 X 2 - 2) : 2 =",
+        "probableAnswers": ["13", "7", "9", "5"],
+        "trueAnswer": "9"
+
+    },
+    {
+        "id": 3,
+        "question": "10 X 1 / 5",
+        "probableAnswers": ["2", "5", "50", "20"],
+        "trueAnswer": "2"
+
+    },
+    {
+        "id": 4,
+        "question": "ჩამოთვლილთაგან რომელი არის მარტივი რიცხვი?",
+        "probableAnswers": ["4", "9", "15", "13"],
+        "trueAnswer": "13"
+
+    },
+    {
+        "id": 5,
+        "question": "3 + 3 X 3 + ( 3 - 3 ) =",
+        "probableAnswers": ["24", "13", "12", "23"],
+        "trueAnswer": "12"
+
+    },
+    {
+        "id": 6,
+        "question": "(10 X 2 - 2) : 2 =",
+        "probableAnswers": ["13", "7", "9", "5"],
+        "trueAnswer": "9"
+
+    },
+    {
+        "id": 7,
+        "question": "10 X 1 / 5",
+        "probableAnswers": ["2", "5", "50", "20"],
+        "trueAnswer": "2"
+
+    },
+    {
+        "id": 8,
+        "question": "ჩამოთვლილთაგან რომელი არის მარტივი რიცხვი?",
+        "probableAnswers": ["4", "9", "15", "13"],
+        "trueAnswer": "13"
+
+    }
+]
