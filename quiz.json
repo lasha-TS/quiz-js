@@ -4,55 +4,61 @@
         "question": "3 + 3 X 3 + ( 3 - 3 ) =",
         "probableAnswers": ["24", "13", "12", "23"],
         "trueAnswer": "12"
-
     },
     {
         "id": 2,
         "question": "(10 X 2 - 2) : 2 =",
         "probableAnswers": ["13", "7", "9", "5"],
         "trueAnswer": "9"
-
     },
     {
         "id": 3,
         "question": "10 X 1 / 5",
         "probableAnswers": ["2", "5", "50", "20"],
         "trueAnswer": "2"
-
     },
     {
         "id": 4,
         "question": "ჩამოთვლილთაგან რომელი არის მარტივი რიცხვი?",
         "probableAnswers": ["4", "9", "15", "13"],
         "trueAnswer": "13"
-
     },
     {
         "id": 5,
-        "question": "3 + 3 X 3 + ( 3 - 3 ) =",
-        "probableAnswers": ["24", "13", "12", "23"],
-        "trueAnswer": "12"
-
+        "question": "ამათგან ყველაზე სწრაფად დაფრინავს?",
+        "probableAnswers": ["არწივი", "მიმინო", "შაშვი", "მერცხალი"],
+        "trueAnswer": "მერცხალი"
     },
     {
         "id": 6,
-        "question": "(10 X 2 - 2) : 2 =",
-        "probableAnswers": ["13", "7", "9", "5"],
-        "trueAnswer": "9"
-
+        "question": "რომელი ნივთიერებაა ყველაზე მეტი ჰაერის შემადგენლობაში?",
+        "probableAnswers": ["აზოტი", "წყალი", "ნახშიროჟანგი", "ჟანგბადი"],
+        "trueAnswer": "აზოტი"
     },
     {
         "id": 7,
-        "question": "10 X 1 / 5",
-        "probableAnswers": ["2", "5", "50", "20"],
-        "trueAnswer": "2"
-
+        "question": "ამათგან რომელია მახრჩობელა?",
+        "probableAnswers": ["ანკარა", "გიურზა", "ანაკონდა", "ასპიტი"],
+        "trueAnswer": "ანაკონდა"
     },
     {
         "id": 8,
-        "question": "ჩამოთვლილთაგან რომელი არის მარტივი რიცხვი?",
-        "probableAnswers": ["4", "9", "15", "13"],
-        "trueAnswer": "13"
-
+        "question": "ფაიფურის სამშობლოა?",
+        "probableAnswers": ["ჩინეთი", "ირანი", "საბერძნეტი", "იაპონია"],
+        "trueAnswer": "ჩინეთი"
+    },
+    {
+        "id": 9,
+        "question": "რომელია სამეჯლისო ცეკვა?",
+        "probableAnswers": ["როკ-ნ-როლ", "ტვისტი", "ლამბადა", "ვალსი"],
+        "trueAnswer": "ვალსი"
+    },
+    {
+        "id": 10,
+        "question": "როგორ თანხას Hქვია ავანსი?",
+        "probableAnswers": ["უკვე გამომუშავებულს", "წინასწარ აღებულს", "პრემიის სახით დანამატს", "საჩუქარს"],
+        "trueAnswer": "წინასწარ აღებულს"
     }
+    
+    
 ]
