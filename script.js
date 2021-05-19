@@ -4,14 +4,23 @@ const paragraph = document.querySelector('#paragraph');
 const answerbuttons = document.querySelector('.answerbuttons');
 const score = document.querySelector('#score');
 const answerbut = document.querySelectorAll('.answerbut');
+const lastbox = document.querySelector('.lastbox');
+const wintext = document.querySelector('.wintext');
+const winimg = document.querySelector('.winimg');
+const finishscore = document.querySelector('.finishscore');
+const procentscore = document.querySelector('.procentscore');
+const playAgain = document.querySelector('.againbutton');
+
+
 let objectArr = 0;
 
 const URL = './quiz.json';
 fetch(URL)
   .then(response => response.json())
   .then(json => {
-    randomJson = json.sort(() => Math.random() - 0.5)
-    start.addEventListener('click', () => {
+    randomJson = json.sort(() => Math.random() - 0.5);
+    start.addEventListener('click',  getStarted);
+    function getStarted(){
       answerbut.forEach(element => {
         element.disabled = false;
       });
@@ -27,35 +36,60 @@ fetch(URL)
 
       objectArr++;
       setTimeout(() => {
-        start.textContent = 'Next ->';
+        start.textContent = 'შემდეგ';
       }, 300);
-    
-      // answerbut.enabled = true;
+
 
       answerbut[0].textContent = objArr.probableAnswers[0];
       answerbut[1].textContent = objArr.probableAnswers[1];
       answerbut[2].textContent = objArr.probableAnswers[2];
       answerbut[3].textContent = objArr.probableAnswers[3];
-      
-      answerbut.forEach((but, index) => {
+
+      answerbut.forEach((but) => {
         but.addEventListener('click', () => {
           if (but.textContent === objArr.trueAnswer) {
             but.style.background = 'green';
             score.textContent++;
-            for(i = 0; i <=3; i++){
+            for (let i = 0; i <= 3; i++) {
               answerbut[i].disabled = true;
               start.disabled = false;
             }
           } else {
             but.style.background = 'red';
-            for(i = 0; i <=3; i++){
+            for (let i = 0; i <= 3; i++) {
               answerbut[i].disabled = true;
               start.disabled = false;
             }
           }
         });
       });
-    }); 
-  });
+    }
+
+      if (objectArr === 11) {
+        lastbox.style.display = 'flex';
+        winimg.src = './img/source.gif';
+        finishscore.textContent = `${score.textContent}/10`;
+        finishscore.style.color = 'green';
+
+      }
+      if (score.textContent == 10) {
+        wintext.textContent = "გილოცავ შენ ყველა შეკითხვას სწორად უპასუხე";
+        winimg.src = './img/source.gif';
+      } else if (score.textContent > 5) {
+        winimg.src = './img/source.gif';
+        wintext.textContent = "კარგი შედეგია კიდევ სცადე მეტი შეგიძლია";
+      } else {
+        wintext.textContent = "დაბალი შედეგია, ცადე მეტი შეძლო";
+        winimg.src = './img/louser.gif';
+      }
+    });
+    playAgain.addEventListener('click', () => {
+      console.log('vaxo')
+      lastbox.style.display = 'none';
+      objectArr = 0;
+      score.textContent = 0;
+      getStarted();
+    })
+  
 
 

@@ -10,18 +10,23 @@ body {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 body .mainbox {
   width: 25rem;
   height: 100vh;
-  background: -webkit-gradient(linear, left top, left bottom, color-stop(10%, black), color-stop(50%, #0099ff), to(black));
-  background: linear-gradient(black 10%, #0099ff 50%, black 100%);
   -webkit-box-shadow: 0px 0px 15px 5px;
           box-shadow: 0px 0px 15px 5px;
   border-radius: 20px;
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(10%, black), color-stop(50%, #0099ff), to(black));
+  background: linear-gradient(black 10%, #0099ff 50%, black 100%);
   background-size: contain;
   background-repeat: repeat;
+  -webkit-transition: 1s;
+  transition: 1s;
 }
 
 body .mainbox .header {
@@ -118,13 +123,14 @@ body .mainbox .box .answerbuttons {
       -ms-flex-align: center;
           align-items: center;
   width: 25rem;
-  height: 7rem;
+  height: 10rem;
 }
 
 body .mainbox .box .answerbuttons .answerbut {
   border: solid 0px;
-  border-radius: 5rem;
+  border-radius: 0.5rem;
   width: 12rem;
+  height: 4rem;
   min-height: 2.5rem;
   padding: 0.5rem;
   color: black;
@@ -139,12 +145,81 @@ body .mainbox .box .start {
   width: 10rem;
   height: 10rem;
   border-radius: 100px;
-  background: radial-gradient(circle, #0099ff 0%, black 70%);
-  font-family: "Creepster", cursive;
+  background: radial-gradient(circle, #0099ff -50%, black 80%);
+  font-family: "ALK Tommaso", sans-serif;
   font-size: 2.5rem;
   color: white;
   -webkit-transition: 0.5s;
   transition: 0.5s;
   outline: none;
+}
+
+body .lastbox {
+  width: 25rem;
+  height: 100vh;
+  -webkit-box-shadow: 0px 0px 15px 5px;
+          box-shadow: 0px 0px 15px 5px;
+  border-radius: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: absolute;
+  background: radial-gradient(circle, #0099ff -100%, black 100%);
+  background-repeat: no-repeat;
+  background-size: cover;
+  -webkit-transition: 1s;
+  transition: 1s;
+  display: none;
+}
+
+body .lastbox .winimg {
+  width: 8rem;
+}
+
+body .lastbox .text {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 13rem;
+}
+
+body .lastbox .text h2 {
+  font-family: "ALK Tommaso", sans-serif;
+  text-align: center;
+  color: white;
+}
+
+body .lastbox .text h1 {
+  font-family: "ALK Tommaso", sans-serif;
+  color: white;
+}
+
+body .lastbox .text .againbutton {
+  border: solid 0;
+  width: 8rem;
+  height: 3rem;
+  font-size: 1.5rem;
+  color: white;
+  border-radius: 5rem;
+  background: radial-gradient(circle, #0099ff -50%, black 90%);
+  font-family: "ALK Tommaso", sans-serif;
 }
 /*# sourceMappingURL=style.css.map */
