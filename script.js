@@ -67,7 +67,8 @@ fetch(URL)
         winimg.src = './img/source.gif';
         finishscore.textContent = `${score.textContent}/10`;
         finishscore.style.color = 'green';
-
+        lastbox.style.width = '25rem';
+        lastbox.style.height = '100vh'
       }
       if (score.textContent == 10) {
         wintext.textContent = "გილოცავ შენ ყველა შეკითხვას სწორად უპასუხე";
@@ -81,15 +82,9 @@ fetch(URL)
       }
     });
     playAgain.addEventListener('click', () => {
-      console.log('vaxo')
-      lastbox.style.display = 'none';
-      objectArr = 0;
-      score.textContent = 0;
-      answerbut.forEach(but => {
-        answerbuttons.style.display = 'flex';
-        but.style.background = 'white';
+      location.reload();
       })
     })
-  });
+  
 
 
