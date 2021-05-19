@@ -19,8 +19,7 @@ fetch(URL)
   .then(response => response.json())
   .then(json => {
     randomJson = json.sort(() => Math.random() - 0.5);
-    start.addEventListener('click',  getStarted);
-    function getStarted(){
+    start.addEventListener('click', () => {
       answerbut.forEach(element => {
         element.disabled = false;
       });
@@ -63,8 +62,6 @@ fetch(URL)
           }
         });
       });
-    }
-
       if (objectArr === 11) {
         lastbox.style.display = 'flex';
         winimg.src = './img/source.gif';
@@ -88,8 +85,11 @@ fetch(URL)
       lastbox.style.display = 'none';
       objectArr = 0;
       score.textContent = 0;
-      getStarted();
+      answerbut.forEach(but => {
+        answerbuttons.style.display = 'flex';
+        but.style.background = 'white';
+      })
     })
-  
+  });
 
 
