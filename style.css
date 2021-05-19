@@ -60,6 +60,12 @@ body .mainbox .header h5 {
   text-shadow: 1px 0px 10px black;
 }
 
+body .mainbox .header h4 {
+  color: white;
+  position: absolute;
+  margin-right: 20rem;
+}
+
 body .mainbox .box {
   display: -webkit-box;
   display: -ms-flexbox;

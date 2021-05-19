@@ -13,7 +13,7 @@ fetch(URL)
     randomJson = json.sort(() => Math.random() - 0.5)
     start.addEventListener('click', () => {
       answerbut.forEach(element => {
-        element.disabled = false
+        element.disabled = false;
       });
       start.disabled = true;
       const objArr = randomJson[objectArr];
@@ -40,27 +40,21 @@ fetch(URL)
       answerbut.forEach((but, index) => {
         but.addEventListener('click', () => {
           if (but.textContent === objArr.trueAnswer) {
-            console.log(index)
             but.style.background = 'green';
             score.textContent++;
             for(i = 0; i <=3; i++){
               answerbut[i].disabled = true;
               start.disabled = false;
             }
-          
           } else {
             but.style.background = 'red';
             for(i = 0; i <=3; i++){
               answerbut[i].disabled = true;
               start.disabled = false;
             }
-            console.log(index)
-            
           }
-          
         });
       });
-
     }); 
   });
 
