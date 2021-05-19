@@ -19,7 +19,7 @@ fetch(URL)
   .then(response => response.json())
   .then(json => {
     randomJson = json.sort(() => Math.random() - 0.5);
-    start.addEventListener('click', () => {
+    start.addEventListener('mousedown', () => {
       answerbut.forEach(element => {
         element.disabled = false;
       });

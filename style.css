@@ -152,6 +152,8 @@ body .mainbox .box .start {
   -webkit-transition: 0.5s;
   transition: 0.5s;
   outline: none;
+  -webkit-transition: 1s;
+  transition: 1s;
 }
 
 body .lastbox {
