@@ -77,6 +77,7 @@ fetch(URL)
         winimg.src = './img/source.gif';
         wintext.textContent = "კარგი შედეგია კიდევ სცადე მეტი შეგიძლია.";
       } else {
+        finishscore.style.color = 'red';
         wintext.textContent = "დაბალი შედეგია, ცადე მეტი შეძლო.";
         winimg.src = './img/louser.gif';
       }
