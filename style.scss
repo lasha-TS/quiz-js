@@ -120,7 +120,7 @@ body{
         transition: 1s;
         display: none;
         .winimg{
-            width: 8rem;
+            width: 15rem;
         }
         .text{
             display: flex;
@@ -137,17 +137,16 @@ body{
                 font-family: $font;
                 color: white;
             }
-            .againbutton{
-                border: solid 0;
-                width: 8rem;
-                height: 3rem;
-                font-size: 1.5rem;
-                color: white;
-                border-radius: 5rem;
-                background: radial-gradient(circle, $backgroundColor -50%, rgba(0,0,0,1) 90%);;
-                font-family: $font;
-            }
         }
-
+        .againbutton{
+            border: solid 0;
+            width: 8rem;
+            height: 3rem;
+            font-size: 1.5rem;
+            color: white;
+            border-radius: 5rem;
+            background: radial-gradient(circle, $backgroundColor -50%, rgba(0,0,0,1) 90%);;
+            font-family: $font;
+        }
     }
 }

@@ -179,7 +179,7 @@ body .lastbox {
 }
 
 body .lastbox .winimg {
-  width: 8rem;
+  width: 15rem;
 }
 
 body .lastbox .text {
@@ -209,7 +209,7 @@ body .lastbox .text h1 {
   color: white;
 }
 
-body .lastbox .text .againbutton {
+body .lastbox .againbutton {
   border: solid 0;
   width: 8rem;
   height: 3rem;

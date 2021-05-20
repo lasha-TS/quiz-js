@@ -71,13 +71,13 @@ fetch(URL)
         lastbox.style.height = '100vh'
       }
       if (score.textContent == 10) {
-        wintext.textContent = "გილოცავ შენ ყველა შეკითხვას სწორად უპასუხე";
+        wintext.textContent = "გილოცავ შენ ყველა შეკითხვას სწორად უპასუხე.";
         winimg.src = './img/source.gif';
       } else if (score.textContent > 5) {
         winimg.src = './img/source.gif';
-        wintext.textContent = "კარგი შედეგია კიდევ სცადე მეტი შეგიძლია";
+        wintext.textContent = "კარგი შედეგია კიდევ სცადე მეტი შეგიძლია.";
       } else {
-        wintext.textContent = "დაბალი შედეგია, ცადე მეტი შეძლო";
+        wintext.textContent = "დაბალი შედეგია, ცადე მეტი შეძლო.";
         winimg.src = './img/louser.gif';
       }
     });
